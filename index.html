@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<html lang="en">
+  <head>
+    <title>A Simple Geocoder Example for SSRL</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <span class="frame-caption">Instructions</span>
+    <div class="frame">
+      <p>This web app can geocode a list of addresses. Simply:</p>
+      <ol>
+        <li>Paste your addresses in the 'Input' textarea</li>
+        <li>Click 'Run'</li>
+        <li>Geocoded result will be populated in the 'Output' textarea</li>
+        <li>Once it's done, save the output as a CSV so you can map them in GIS</li>
+      </ol>
+    </div>
+    <div>
+      <div class="col input">Input: <textarea id="input">
+        Estevan, SK, Canada
+        Flin Flon, SK, Canada
+        Humboldt, SK, Canada
+        Lloydminster, SK, Canada
+        Martensville, SK, Canada
+        Meadow Lake, SK, Canada
+        Melfort, SK, Canada
+        Melville, SK, Canada
+        Moose Jaw, SK, Canada
+        North Battleford, SK, Canada
+        Prince Albert, SK, Canada
+        Regina, SK, Canada
+        Saskatoon, SK, Canada
+        Swift Current, SK, Canada
+        Warman, SK, Canada
+        Weyburn, SK, Canada
+        Yorkton, SK, Canada
+      </textarea></div>
+      <div class="col output">Output: <textarea readonly rows="20" id="output"></textarea></div>
+    </div>
+    <button id="btnRun">Run</button>
+    <progress value="10" max="100"></progress>
+    <div class="progress-label">10%</div>
+    <hr>
+    <div id="map"></div>
+    <script src="geocoding.js"></script>
+    <div class="legal">Copyright &copy; 2016 <a href="mailto:colan12345@gmail.com">gisbenben</a> All Rights Reserved.</div>
+  </body>
+</html>
